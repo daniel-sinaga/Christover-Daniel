@@ -1,0 +1,158 @@
+/* Reset CSS */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #555;
+}
+
+
+/* Carousel */
+.carousel-item img {
+    max-width: 60%; /*Maksimum lebar gambar adalah 100% dari parent container*/
+    height: auto; /*Menjaga rasio aspek gambar*/
+    margin: 0 auto; /*Menengahkan gambar di dalam carousel*/
+    border-radius: 10px; /*Membuat sudut gambar melengkung*/
+}
+
+
+/* About Me Section */
+#about {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.container h2 {
+    margin: 10px;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Projects Grid/Card */
+#projects {
+    text-align: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
+
+.card {
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Contact Me Section */
+#contact {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+form {
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Link References Section */
+section.bg-dark {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Animasi pada elemen yang muncul saat di-scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        background-color: #ffffff;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #343a40;
+    }
+}
